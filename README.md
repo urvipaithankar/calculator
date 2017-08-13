@@ -1,5 +1,5 @@
 # Calculator 
 
-## BMI 
+## **[BMI](https://urvipaithankar.github.io/calculator/bmi)**
 
-## BMR
+## **[BMR](https://urvipaithankar.github.io/calculator/bmr)**
