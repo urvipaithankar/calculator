@@ -1,5 +1,6 @@
 <?php
 echo "Helo";
+/*
 $request = explode('/', trim($_SERVER['REQUEST_URI'],'bmi/index.php/'));
 if(isset($request[0]) && isset($request[1]))
 {
@@ -18,5 +19,5 @@ else
         "error_code" : "001",
         "error" : "Input missing. Please check the documentation at https://urvipaithankar.github.io/calculator/bmi"
     }';
-}
+}*/
 ?>
