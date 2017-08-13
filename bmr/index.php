@@ -5,7 +5,7 @@ if(isset($request[0]) == true && isset($request[1]) == true && isset($request[2]
     $height = trim($request[0]); // get height in centimeters
     $weight = trim($request[1]); //get weight in kgs
     $age = trim($request[2]); //get age in years
-    $gender = trim($request[3]); //get gender 
+    $gender = (string) trim($request[3]); //get gender 
     $bmr  = 10 * $weight + 6.25 * $height - 5 * $age;
 
     if ($gender == "female") 
@@ -14,7 +14,7 @@ if(isset($request[0]) == true && isset($request[1]) == true && isset($request[2]
         $gender = "female";
         
     }
-    else 
+    else if($gender == "male")
     {
         $bmr  +=  5 ;
         $gender = "male";
