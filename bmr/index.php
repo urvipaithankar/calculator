@@ -2,7 +2,7 @@
 $request = explode('/', trim($_SERVER['REQUEST_URI'],'bmr/index.php/'));
 if(isset($request[0]) == true && isset($request[1]) == true && isset($request[2]) == true && isset($request[3]) == true)
 {
-    $height = $request[0]/100; // get height in centimeters and convert it to meters [1 m = 100 cm]
+    $height = $request[0]; // get height in centimeters
     $weight = $request[1]; //get weight in kgs
     $age = $request[2]; //get age in years
     $gender = $request[3]; //get gender [m - male / f - female] 
@@ -13,13 +13,13 @@ if(isset($request[0]) == true && isset($request[1]) == true && isset($request[2]
         $bmr  = 10 * $weight + 6.25 * $height - 5 * $age - 161 ;
         $gender = "female";
     }
-    else 
+    else if($gender != "f")
     {
         $bmr  = 10 * $weight + 6.25 * $height - 5 * $age + 5 ;
         $gender = "male";
     }
     echo '"data":{ 
-        "height" : '.($height*100).', 
+        "height" : '.$height.', 
         "weight" : '.$weight.',
         "age" : '.$age.',
         "gender" : '.$gender.', 
