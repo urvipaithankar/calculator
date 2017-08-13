@@ -1,5 +1,5 @@
 <?php
-echo "Helo";
+echo "Helo bmi";
 /*
 $request = explode('/', trim($_SERVER['REQUEST_URI'],'bmi/index.php/'));
 if(isset($request[0]) && isset($request[1]))
