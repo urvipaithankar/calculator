@@ -6,20 +6,20 @@ if(isset($request[0]) == true && isset($request[1]) == true && isset($request[2]
     $weight = trim($request[1]); //get weight in kgs
     $age = trim($request[2]); //get age in years
     
-    if(isset($request[3]) && strcmp(trim($request[3]," "),"female") == 0)
+    if(isset($request[3]) && (strcmp($request[3],"female") == 0) ) 
         $gender = "female"; //get gender 
     else
         $gender = "male";
 
     $bmr  = 10 * $weight + 6.25 * $height - 5 * $age;
 
-    if ($gender === "female") 
+    if ($gender == "female") 
     {
         $bmr -= 161 ;
         $gender = "female";
         
     }
-    else if($gender === "male")
+    else if($gender == "male")
     {
         $bmr  +=  5 ;
         $gender = "male";
