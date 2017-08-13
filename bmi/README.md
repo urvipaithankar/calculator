@@ -1,4 +1,4 @@
-# BMI
+# BMI Calculator
 
 #### **[Check out creator's details](https://urvipaithankar.github.io)**
 
@@ -59,18 +59,19 @@ weight - should be specified in Kilograms (Kgs)
 
 ### NOTE
 
-The unit of BMI is kg/m<sup>2</sup>
+The unit of BMI is *kg/m<sup>2</sup>*
 
 
 ---
 
 ## Error Codes
 
- **_ERROR NO._** | **_ERROR_** | **_DESCRIPTION_**
+**_ERROR NO._** | **_ERROR_** | **_DESCRIPTION_**
+
 -------------- | -------------- | ----------------
-	**001**    | *ERROR001* | This error occues if there is a problem with the input data and/or parameters specified.
-    
-    
+	
+**001** | *ERROR001* | This error occues if there is a problem with the input data and/or parameters specified.
+
 -----
 
 [Visit the creator's site...](https://urvipaithankar.github.io)
