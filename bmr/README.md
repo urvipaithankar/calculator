@@ -76,8 +76,6 @@ The unit of BMI is *calories/day*
 
  **_ERROR NO._** | **_ERROR_** | **_DESCRIPTION_**
  
--------------- | -------------- | ----------------
-
 **001** | *ERROR001* | This error occues if there is a problem with the input data and/or parameters specified.
 
 -----
