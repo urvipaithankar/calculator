@@ -1,8 +1,8 @@
 <?php
 
 echo '"data":{
-    "app_owner" : "urvipaithankar",
-    "description" : "An api to calculate BMI and BMR"
+    "owner" : "urvipaithankar",
+    "description" : "An API to calculate BMI and BMR"
 }';
 
 ?>
