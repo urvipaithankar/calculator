@@ -6,7 +6,7 @@ if(isset($request[0]) == true && isset($request[1]) == true && isset($request[2]
     $weight = trim($request[1]); //get weight in kgs
     $age = trim($request[2]); //get age in years
     
-    if(isset($request[3]) && (strcmp($request[3],"female") == 0) ) 
+    if(isset($request[3])) 
         $gender = "female"; //get gender 
     else
         $gender = "male";
