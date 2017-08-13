@@ -8,15 +8,15 @@ if(isset($request[0]) == true && isset($request[1]) == true && isset($request[2]
     $gender = $request[3]; //get gender [m - male / f - female] 
     $bmr = 0;
 
-    if ($gender == 'f') 
+    if ($gender == "f") 
     {
         $bmr  = 10 * $weight + 6.25 * $height - 5 * $age - 161 ;
-        $gender = 'female';
+        $gender = "female";
     }
     else 
     {
         $bmr  = 10 * $weight + 6.25 * $height - 5 * $age + 5 ;
-        $gender = 'male';
+        $gender = "male";
     }
     echo '"data":{ 
         "height" : '.($height*100).', 
