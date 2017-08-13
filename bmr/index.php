@@ -8,7 +8,7 @@ if(isset($request[0]) == true && isset($request[1]) == true && isset($request[2]
     $gender = $request[3]; //get gender 
     $bmr  = 10 * $weight + 6.25 * $height - 5 * $age;
 
-    if ($gender == "f") 
+    if ($gender == "female") 
     {
         $bmr -= 161 ;
         $gender = "female";
