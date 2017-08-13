@@ -6,9 +6,9 @@ if(isset($request[0]) && isset($request[1]))
     $weight = $request[1]; //get weight in kgs
     $bmi = $weight/($height*$height);
     echo '"data":{
-    "height":'.$height*100.'; 
-    "weight":'.$weight.'; 
-    "bmi":'.$bmi.'; 
+    "height":'.$height*100.', 
+    "weight":'.$weight.',
+    "bmi":'.$bmi.'
     }';
 }
 else
