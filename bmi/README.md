@@ -8,7 +8,7 @@
 
 ---
 
-## Calculate API easily with this API. Read this documentation for detailed information.
+## Calculate Body Mass Index (BMI) easily with this API. Read this documentation for detailed information.
 
 ---
 
@@ -52,10 +52,15 @@ weight - should be specified in Kilograms (Kgs)
 "data":{
 	"height" : height,
 	"weight" : weight,
-	"bmi" : bmi             **(kg/m <sup>2</sup>)**
+	"bmi" : bmi             
 }
 
 ```
+
+### NOTE
+
+The unit of BMI is kg/m<sup>2</sup>
+
 
 ---
 
